@@ -1,2 +1,2 @@
 compile:
-	gcc ubt.c -o ubt
+	ghc -dynamic ubt.hs
