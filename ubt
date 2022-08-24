@@ -1,0 +1,21 @@
+#!/usr/bin/awk -f
+BEGIN {
+    cnt=0
+    r=0
+    
+    for (c=0; c<16;c++)
+        printf "%x ",c
+    
+    printf "\n"
+
+    for (i = 10240; i <= 10495; i++){
+        printf "%c ",i
+        cnt++
+
+        if(cnt==16){
+            cnt=0
+            printf " %x\n",l
+            l++
+        }
+    }
+}
